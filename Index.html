@@ -10,7 +10,7 @@
     <title>El Faro</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body onload="actReloj()">
     <header class="header">
         <a href="index.html">
             <img class="header-logo" src="img/El_faro.webp" alt="logo">
@@ -18,7 +18,7 @@
         <h1>
         El Faro <span>Noticias, deportes y negocios</span>
         </h1>   
-
+        <div id="reloj"></div>
     </header>
 
     <div class="nav-bg">
@@ -26,8 +26,18 @@
             <a class="navegacion__enlace" href="index.html">Inicio</a>
             <a class="navegacion__enlace" href="deportes.html">Deportes</a>    
             <a class="navegacion__enlace" href="negocios.html">Negocios</a>
+            <a class="navegacion__enlace" href="contacto.html">Contacto</a>
         </nav>
     </div>
+    <form class="formulario">
+        <label for="title">Título del Artículo:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="description">Descripción del Artículo:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <button type="submit">Agregar Artículo</button>
+    </form>
     <main class="contenedor">
         <div class="grid-noticias">
 
@@ -78,7 +88,8 @@
                 </div>       
         </div>    
                 
-    </main>  
+    </main>
+    <script src="./js/script.js"></script>
 </body>
 <footer>
     <div class="footer">

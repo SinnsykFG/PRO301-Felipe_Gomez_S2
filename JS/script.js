@@ -23,13 +23,10 @@ function actReloj(){
 
 
 
-   
-   // Formato deseado (por ejemplo, DD/MM/YYYY HH:MM:SS)
-   let formattedDate = `${day}/${month}/${year}`;
-   const formattedTime = `${lahora}`;
 
     // Mostrar fecha y hora
     document.getElementById('fecha').innerHTML = formattedDate;
+    
 
    setTimeout("actReloj()",1000);
 }

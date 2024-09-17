@@ -13,7 +13,7 @@
 </head>
 <body onload="actReloj(), cargarNoticias()">
     <header>
-        <div class="container text-center" style="background-color: lightseagreen">
+        <div class="container-fluid text-center" style="background-color: lightseagreen">
             <div class="row">
               <div class="col-4">
                 <a href="index.html">
@@ -45,10 +45,12 @@
           </nav>
     </div>
 
-
+    <div class="bg-warning text-center py-2">
+        <p class="mb-0">Aviso importante: Actualización de noticias</p>
+    </div>
 
     <main>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <h2 class="new-amsterdam" style="font-size: 2.8rem">Noticias</h2>
         </div>
@@ -73,7 +75,7 @@
         </div>
 
         <div class="row">
-            <div class="col noticia">
+            <div class="col-lg-8 mb-4 noticia">
                 <h2 class="bungee-tint-regular">Caso Audio: exfiscales coinciden en que es probable que Hermosilla quede en prisión preventiva</h2>
                 <img src="img/hermosilla.jpg" alt="Hermosilla" class="img-fluid">
             <p>La Fiscalía ha solicitado la prisión preventiva para Luis Hermosilla, Leonarda Villalobos y Luis Angulo, principales implicados en el 
@@ -87,7 +89,7 @@
                 importancia de escuchar los argumentos de la defensa en la próxima audiencia, antes de que se decrete la medida cautelar. <br>Fuente: Biobio.cl</br>
             </p>
         </div>
-        <div class="col noticia">
+        <div class="col-lg-4 mb-4 noticia">
             <h2 class="bungee-tint-regular">Tricel destituye a gobernadora de Región de Coquimbo por notable abandono de deberes</h2>
             <img src="img/kris-naranjo.png" alt="Naranjo" class="img-fluid">
             <p>
@@ -112,10 +114,10 @@
     
 </div>
 <div class="row ">
-    <div class="col text-center noticia">
+    <div class="col-lg-4 mb-4 text-center noticia">
                 <h2 class="bungee-tint-regular">Récord de audiencia en la última noche de la Convención Demócrata en Chicago | Noticias Telemundo</h2>
-                        <div class="cuerpo-noticia">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bx1MZLQan8g?si=aVhT7E3MTwot9nGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="object-fit-contain">
+                            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Bx1MZLQan8g?si=aVhT7E3MTwot9nGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <p>Fuente: Noticias Telemundo</p>
                     </div> 
@@ -123,12 +125,9 @@
             </div>
         </div>
     </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5"></footer>
+        <p>El Faro - Todos los derechos reservados © 2024</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
-<footer class="footer text-center">
-    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-        <h2><span>&copy;</span>El Faro - Todos los derechos reservados</h2>
-    </div>
-</footer>
-
 </html>

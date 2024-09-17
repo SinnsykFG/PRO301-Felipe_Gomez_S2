@@ -13,7 +13,7 @@
 </head>
 <body onload="actReloj(), cargarNoticias()">
     <header>
-        <div class="container text-center" style="background-color: lightseagreen">
+        <div class="container-fluid text-center" style="background-color: lightseagreen">
             <div class="row">
               <div class="col-4">
                 <a href="index.html">
@@ -45,40 +45,44 @@
           </nav>
     </div>
 
-    <main>
-        <div class="container text-center" style="font-size: 3rem;">
-            <div class="row">
-                <h2 class="new-amsterdam">Contacto</h2>
-             </div>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Nombre</span>
-            <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Username" aria-describedby="basic-addon1">
+    <div class="bg-warning text-center py-2">
+        <p class="mb-0">Avisos importantes: Actualización de noticias</p>
+    </div>
+
+    <main class="container my-5">
+        <div class="row">
+            <h2 class="new-amsterdam text-center fs-1">Contacto</h2>
         </div>
-          
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Correo</span>
-            <input type="text" class="form-control" placeholder="Correo" aria-label="Correo">
-            <span class="input-group-text">@</span>
-            <input type="text" class="form-control" placeholder="ejemplo.com" aria-label="Server">
-          </div>
-          
-          <div class="input-group">
-            <span class="input-group-text">Mensaje</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-          </div>
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label fs-4">Nombre</label>
+                        <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Nombre completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label fs-4">Correo Electrónico</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Correo" aria-label="Correo">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control form-control-lg" placeholder="ejemplo.com" aria-label="Servidor">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label fs-4">Mensaje</label>
+                        <textarea class="form-control form-control-lg" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div id="noticias-container" class="row text-center">
-            <!-- Aquí se agregarán las noticias dinámicamente -->
-        </div>
-        
     </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5"></footer>
+        <p>El Faro - Todos los derechos reservados © 2024</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
-<footer class="container-fluid text-center">
-    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-        <h2><span>&copy;</span>El Faro - Todos los derechos reservados</h2>
-    </div>
-</footer>
-
 </html>

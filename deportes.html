@@ -13,7 +13,7 @@
 </head>
 <body onload="actReloj(), cargarNoticias()">
     <header>
-        <div class="container text-center" style="background-color: lightseagreen">
+        <div class="container-fluid text-center" style="background-color: lightseagreen">
             <div class="row">
               <div class="col-4">
                 <a href="index.html">
@@ -45,8 +45,12 @@
           </nav>
     </div>
 
+    <div class="bg-warning text-center py-2">
+        <p class="mb-0">Aviso importante: Actualización de noticias</p>
+    </div> 
+    
     <main>
-        <div class="container text-center">
+        <div class="container-fluid text-center">
             <div class="row">
                 <h2 class="new-amsterdam" style="font-size: 2.8rem">Deportes</h2>
              </div>
@@ -69,7 +73,7 @@
             </div>
              
             <div class="row">
-              <div class="col noticia">
+              <div class="col-lg-8 mb-4 noticia">
                 <h2 class="bungee-tint-regular">Duro camino de Colo-Colo de Camino a la Copa Libertadores</h2>
                 <p class="cuerpo-noticia">Colo Colo mantiene sus aspiraciones en tres competencias tras clasificar a los cuartos de final de la Copa Libertadores, 
                     eliminando a Junior de Colombia con un marcador global de 3-1. El equipo albo se ha posicionado entre los ocho mejores del 
@@ -82,15 +86,15 @@
                     anticipando el receso por las Fiestas Patrias.<br>Fuente: Emol.com</br>
                 </p>
               </div>
-              <div class="col">
+              <div class="col-lg-8 mb-4">
                 <img src="img/colo-colo.jpg" class="img-fluid">
               </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-4 mb-4">
                   <img src="img/oconnor.png" class="img-fluid">
                 </div>
-                <div class="col noticia">
+                <div class="col-lg-4 mb-4 noticia">
                     <h2 class="bungee-tint-regular">Ben O'Connor desata el caos en la Vuelta a España</h2> 
                     <p class="cuerpo-noticia">Ben O'Connor, ciclista australiano del equipo AG2R, protagonizó una hazaña en la sexta etapa de la Vuelta a España, sorprendiendo 
                         al pelotón con una victoria aplastante. O'Connor llegó a la meta con una ventaja de 6 minutos y 31 segundos sobre los principales 
@@ -103,7 +107,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col noticia">
+                <div class="col-lg-4 mb-4 noticia">
                     <h2 class="bungee-tint-regular">GP de Países Bajos de F1: horarios y dónde ver los entrenamientos libres 3</h2>
                     <p class="cuerpo-noticia">El Circuito de Zandvoort en Países Bajos será el escenario de la decimoquinta prueba del Mundial de Fórmula 1, reanudando la 
                         competencia tras el parón estival. Max Verstappen, líder del campeonato con 277 puntos, buscará ganar en casa y acercarse a su 
@@ -115,18 +119,15 @@
                         entre los fanáticos neerlandeses. <br>Fuente: Elpais.com</br>
                     </p>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 mb-4">
                   <img src="img/F1.png" class="img-fluid">
                 </div>
               </div>
           </div>    
     </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5"></footer>
+        <p>El Faro - Todos los derechos reservados © 2024</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
-<footer class="footer text-center">
-    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-        <h2><span>&copy;</span>El Faro - Todos los derechos reservados</h2>
-    </div>
-</footer>
-
 </html>

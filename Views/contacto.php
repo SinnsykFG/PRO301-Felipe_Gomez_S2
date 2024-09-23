@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,10 +36,10 @@
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-                  <a class="nav-link" href="deportes.html">Deportes</a>
-                  <a class="nav-link" href="negocios.html">Negocios</a>
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
+                  <a class="nav-link" href="deportes.php">Deportes</a>
+                  <a class="nav-link" href="negocios.php">Negocios</a>
+                  <a class="nav-link" href="contacto.php">Contacto</a>
                 </div>
               </div>
             </div>

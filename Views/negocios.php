@@ -31,19 +31,19 @@
         </header>
 
         <div class="nav-bg">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary navbar" style="font-size: 2.8rem;">
-                <div class="container-fluid">
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-                      <a class="nav-link" href="deportes.html">Deportes</a>
-                      <a class="nav-link" href="negocios.html">Negocios</a>
-                      <a class="nav-link" href="contacto.html">Contacto</a>
-                    </div>
-                  </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar" style="font-size: 2.8rem;">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
+                  <a class="nav-link" href="deportes.php">Deportes</a>
+                  <a class="nav-link" href="negocios.php">Negocios</a>
+                  <a class="nav-link" href="contacto.php">Contacto</a>
                 </div>
-              </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
+    </div>
 
         <div class="bg-warning text-center py-2">
             <p class="mb-0">Aviso importante: Actualización de noticias</p>
@@ -54,22 +54,7 @@
             <div class="row">
                 <h2 class="new-amsterdam" style="font-size: 2.8rem">Negocios</h2>
             </div>
-            <div class="row">
-                <form class="formulario bg-dark text-white p-4 rounded">
-                    <fieldset>
-                        <legend class="text-center">Añadir Artículo</legend>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Título</label>
-                            <input type="text" class="form-control input-text" id="nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Artículo</label>
-                            <textarea class="form-control input-text" id="mensaje"></textarea>
-                        </div>
-                        <button type="submit" class="boton btn btn-primary">Enviar</button>
-                    </fieldset>
-                </form>
-            </div>
+
             <div class="row">
               <div class="col noticia">
                 <h2 class="bungee-tint-regular">5 sectores laborales que tendrán una elevada demanda en el futuro (y las habilidades necesarias para tener éxito en ellos)</h2>

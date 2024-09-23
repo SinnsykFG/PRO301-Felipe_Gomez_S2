@@ -35,10 +35,10 @@
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
-                  <a class="nav-link" href="deportes.html">Deportes</a>
-                  <a class="nav-link" href="negocios.html">Negocios</a>
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
+                  <a class="nav-link" href="deportes.php">Deportes</a>
+                  <a class="nav-link" href="negocios.php">Negocios</a>
+                  <a class="nav-link" href="contacto.php">Contacto</a>
                 </div>
               </div>
             </div>
@@ -55,22 +55,6 @@
                 <h2 class="new-amsterdam" style="font-size: 2.8rem">Deportes</h2>
              </div>
 
-             <div class="row">
-                <form class="formulario bg-dark text-white p-4 rounded">
-                    <fieldset>
-                        <legend class="text-center">Añadir Artículo</legend>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Título</label>
-                            <input type="text" class="form-control input-text" id="nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Artículo</label>
-                            <textarea class="form-control input-text" id="mensaje"></textarea>
-                        </div>
-                        <button type="submit" class="boton btn btn-primary">Enviar</button>
-                    </fieldset>
-                </form>
-            </div>
              
             <div class="row">
               <div class="col-lg-8 mb-4 noticia">

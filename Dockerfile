@@ -25,6 +25,7 @@ COPY . /var/www/html/
 
 # Corregir los permisos de todos los archivos copiados
 RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R 755 /var/www/html
 
 # Exponer el puerto 80 para el tráfico HTTP
 EXPOSE 80

@@ -35,7 +35,7 @@
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
+                  <<a class="nav-link active" aria-current="page" href="../Index.php">Inicio</a>
                   <a class="nav-link" href="./Views/deportes.php">Deportes</a>
                   <a class="nav-link" href="./Views/negocios.php">Negocios</a>
                   <a class="nav-link" href="./Views/contacto.php">Contacto</a>

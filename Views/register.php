@@ -16,7 +16,7 @@
         <div class="container-fluid text-center" style="background-color: lightseagreen">
             <div class="row">
               <div class="col-4">
-                <a href="index.php">
+                <a href="../Index.php">
                     <img class="header-logo" src="img/El_faro.webp" alt="logo">
                 </a>
               </div>
@@ -36,6 +36,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="../Index.php">Inicio</a>
+                  <a class="nav-link" href="../Views/noticias.php">Noticias</a>
                   <a class="nav-link" href="./deportes.php">Deportes</a>
                   <a class="nav-link" href="./negocios.php">Negocios</a>
                   <a class="nav-link" href="./contacto.php">Contacto</a>
@@ -49,31 +50,33 @@
         <p class="mb-0">Aviso importante: Actualización de noticias</p>
     </div>
     <main>
+      <div class="mb-3">   
         <form action="/index.php" method="POST">
-            <input type="hidden" name="action" value="register">
-            
-            <label for="username">Nombre de Usuario:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <!-- Selección del rol del usuario -->
-            <label for="role">Rol del usuario:</label>
-            <select id="role" name="role">
-                <option value="lector">Lector</option>
-                <option value="editor">Editor</option>
-            </select>
-
-            <button type="submit">Registrarse</button>
+          <input type="hidden" name="action" value="register">
+          
+          <label for="username">Nombre de Usuario:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <!-- Selección del rol del usuario -->
+          <label for="role">Rol del usuario:</label>
+          <select id="role" name="role">
+            <option value="lector">Lector</option>
+            <option value="editor">Editor</option>
+          </select>
+          
+          <button type="submit">Registrarse</button>
         </form>
-    </main>
-    <footer>
+      </div>
+      </main>
+      <footer>
         <div class="container-fluid bg-dark text-white text-center py-3">
-            <p>El Faro - 2021</p>
+          <p>El Faro - Todos los derechos reservados © 2024</p>
         </div>
 </body>
 

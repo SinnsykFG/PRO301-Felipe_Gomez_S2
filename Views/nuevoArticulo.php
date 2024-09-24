@@ -16,7 +16,7 @@
         <div class="container-fluid text-center" style="background-color: lightseagreen">
             <div class="row">
               <div class="col-4">
-                <a href="index.php">
+                <a href="../Index.php">
                     <img class="header-logo" src="img/El_faro.webp" alt="logo">
                 </a>
               </div>
@@ -36,6 +36,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="../Index.php">Inicio</a>
+                  <a class="nav-link" href="../Views/noticias.php">Noticias</a>
                   <a class="nav-link" href="./deportes.php">Deportes</a>
                   <a class="nav-link" href="./negocios.php">Negocios</a>
                   <a class="nav-link" href="./contacto.php">Contacto</a>
@@ -49,19 +50,21 @@
         <p class="mb-0">Aviso importante: Actualización de noticias</p>
     </div>
     <main>
+      <div class="mb-3">
         <form action="index.php" method="POST" id="form-noticia" class="formulario bg-dark text-white p-4 rounded">
-            <input type="hidden" name="action" value="create_article">
-            <label for="title">Título:</label>
-            <input type="text" name="title" id="title">
-            
-            <label for="content">Contenido:</label>
-            <textarea name="content" id="content"></textarea>
-
-            <button type="submit">Crear Artículo</button>
+          <input type="hidden" name="action" value="create_article">
+          <label for="title">Título:</label>
+          <input type="text" name="title" id="title">
+          
+          <label for="content">Contenido:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          
+          <button type="submit">Crear Artículo</button>
         </form>
+      </div>
     </main>
     <footer>
         <div class="container-fluid bg-dark text-white text-center py-3">
-            <p>El Faro - 2021</p>
+          <p>El Faro - Todos los derechos reservados © 2024</p>
         </div>
 </body>

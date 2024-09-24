@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// Redirigir al usuario si no está registrado
+if (!isset($_SESSION['usuario_id'])) {
+    header('Location: ../Index.php');
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -16,7 +27,7 @@
             <div class="container-fluid text-center" style="background-color: lightseagreen">
                 <div class="row">
                   <div class="col-4">
-                    <a href="index.php">
+                    <a href="../Index.php">
                         <img class="header-logo" src="img/El_faro.webp" alt="logo">
                     </a>
                   </div>
@@ -36,6 +47,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="../Index.php">Inicio</a>
+                  <a class="nav-link" href="../Views/noticias.php">Noticias</a>
                   <a class="nav-link" href="./deportes.php">Deportes</a>
                   <a class="nav-link" href="./negocios.php">Negocios</a>
                   <a class="nav-link" href="./contacto.php">Contacto</a>

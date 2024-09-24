@@ -3,7 +3,7 @@ class ArticuloController {
         
         // Método para mostrar el formulario de registro
         public function showRegisterForm() {
-            require_once '../views/articulo/register.php'; // Cargar la vista del formulario
+            require_once '../views/nuevoArticulo.php'; // Cargar la vista del formulario
         }
     
         // Método para registrar un nuevo articulo

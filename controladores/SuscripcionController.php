@@ -1,42 +1,50 @@
 <?php
-class SuscripcionController {
+// Archivo: UserController.php
 
+require_once '../models/Usuario.php';  // Importamos el modelo del usuario
+
+class UserController {
+    
     // Método para mostrar el formulario de registro
     public function showRegisterForm() {
-        require_once '../views/suscripcion/register.php'; // Cargar la vista del formulario
+        require_once '../views/user/register.php'; // Cargar la vista del formulario
     }
 
-    // Método para registrar una nueva suscripcion
+    // Método para registrar un nuevo usuario
     public function register() {
         // Obtener los datos del formulario
-        $id = $_POST['id'];
+        $id = $_POST['username'];
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
-        $telefono = $_POST['telefono'];
-        $direccion = $_POST['direccion'];
-        $fecha = $_POST['fecha'];
-        $estado = $_POST['estado'];
+        $password = $_POST['password'];
+        $rol = isset($_POST['rol']) ? $_POST['rol'] : 'lector';
 
         // Validación básica
-        if (empty($id)|| empty($nombre)|| empty($email) || empty($telefono) || empty($direccion) || empty($fecha) || empty($estado)) {
+        if (empty($id)|| empty($nombre)|| empty($password) || empty($email) || empty($password)) {
             $error = "Todos los campos son obligatorios.";
-            require_once '../views/suscripcion/register.php';
+            require_once '../views/user/register.php';
             return;
         }
 
-        // Crear una nueva instancia de suscripcion
-        $suscripcion = new Suscripcion($id, $nombre, $email, $telefono, $direccion, $fecha, $estado);
+        //Leer JSON de usuarios
+        $usuariosJson = file_get_contents('../data/usuarios.json');
+        $usuarios = json_decode($usuarios, true);
+        // Crear una nueva instancia de usuario
+        $user = new Usuario($id, $nombre, $email, $password, $rol, $suscripcionActiva);
+        
+        //Se agrega el nuevo usuario a la lista
+        $usuarios[] = $nuevoUsuario;
 
-        // Guardar la suscripcion en la base de datos (simulado)
-        $suscripcion->save();
+        //Se Guarda la lista atualizada en JSON
+        file_put_contents('../data/usuarios.json', json_encode($usuarios));
 
         // Redirigir o mostrar un mensaje de éxito
-        echo "Suscripcion registrada con éxito.";
+        echo "Usuario registrado con éxito.";
     }
 
     // Método para mostrar el formulario de inicio de sesión
     public function showLoginForm() {
-        require_once '../views/suscripcion/login.php';  // Cargar la vista del formulario de login
+        require_once '../views/user/login.php';  // Cargar la vista del formulario de login
     }
 
     // Método para manejar el inicio de sesión
@@ -44,6 +52,10 @@ class SuscripcionController {
         $email = $_POST['email'];
         $password = $_POST['password'];
     }
-}
 
+    // Método para mostrar el perfil del usuario
+    public function showProfile() {
+        require_once '../views/user/profile.php';  // Cargar la vista del perfil
+    }
+}
 ?>

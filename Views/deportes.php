@@ -36,9 +36,9 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
-                  <a class="nav-link" href="deportes.php">Deportes</a>
-                  <a class="nav-link" href="negocios.php">Negocios</a>
-                  <a class="nav-link" href="contacto.php">Contacto</a>
+                  <a class="nav-link" href="./deportes.php">Deportes</a>
+                  <a class="nav-link" href="./negocios.php">Negocios</a>
+                  <a class="nav-link" href="./contacto.php">Contacto</a>
                 </div>
               </div>
             </div>

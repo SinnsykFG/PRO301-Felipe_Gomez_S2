@@ -1,7 +1,7 @@
 # Usar la imagen base oficial de PHP con Apache
 FROM php:7.4-apache
 
-# Instalar extensiones de PHP necesarias para tu proyecto
+# Instalar extensiones de PHP necesarias
 RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
@@ -17,6 +17,9 @@ ENV APACHE_DOCUMENT_ROOT /var/www/html/Views
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
+# Asegurarse de que Apache muestre el index.php como un archivo de índice
+RUN echo 'DirectoryIndex index.php' >> /etc/apache2/apache2.conf
+
 # Copiar el contenido del directorio actual en el contenedor en /var/www/html
 COPY . /var/www/html/
 
@@ -25,12 +28,6 @@ RUN chown -R www-data:www-data /var/www/html
 
 # Exponer el puerto 80 para el tráfico HTTP
 EXPOSE 80
-
-# Opcional: Si usas Composer, asegúrate de copiar el archivo composer.json y ejecutar composer install
-# COPY composer.json /var/www/html/
-# COPY composer.lock /var/www/html/
-# RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-# RUN composer install --no-dev --optimize-autoloader
 
 # El siguiente CMD mantiene el contenedor en ejecución y sirve tu aplicación
 CMD ["apache2-foreground"]

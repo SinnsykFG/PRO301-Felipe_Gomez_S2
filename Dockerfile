@@ -16,7 +16,7 @@ WORKDIR ${APACHE_DOCUMENT_ROOT}
 
 #Apache para usar index.php como arhivo de inicio
 RUN echo 'DirectoryIndex index.php' > /etc/apache2/conf-available/docker-php.conf
-RUN a2enconf dir
+RUN a2enconf docker-php
 # Actualizar la configuración de Apache para usar el nuevo directorio raíz del documento
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf

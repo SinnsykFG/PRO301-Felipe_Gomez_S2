@@ -74,12 +74,12 @@ if (isset($_SESSION['usuario_id'])) {
             </div>
           </nav>
     </div>
-    <div class="login-container">
+    <div class="login-container container-fluid text-center" style="background-color: cornflowerblue;">
         <h2>Bienvenido a El Faro</h2>
         <?php if ($error): ?>
             <p class="error"><?= $error ?></p>
         <?php endif; ?>
-        <form action="index.php" method="post">
+        <form action="./Index.php" method="post">
             <div>
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required>

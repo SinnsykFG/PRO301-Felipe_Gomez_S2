@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) gd pdo pdo_mysql mysqli zip
 
 # Establecer el directorio raíz del documento de Apache al directorio de Views
-ENV APACHE_DOCUMENT_ROOT /var/www/html/Views
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/Views
 WORKDIR ${APACHE_DOCUMENT_ROOT}
 
 #Apache para usar index.php como arhivo de inicio

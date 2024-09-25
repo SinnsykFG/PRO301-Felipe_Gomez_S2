@@ -1,8 +1,8 @@
 [
     {
-        "id": "1",
-        "nombre": "UsuarioDemo",
-        "email": "demo@elfaro.com",
-        "password": "contraseña"
+        "id": "correo@elfaro.cl",
+        "nombre": "correo@elfaro.cl",
+        "email": "correo@elfaro.cl",
+        "password": "123456"
     }
 ]

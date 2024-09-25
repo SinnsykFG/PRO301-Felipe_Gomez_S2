@@ -50,19 +50,25 @@
         <p class="mb-0">Aviso importante: Actualización de noticias</p>
     </div>
     <main>
-      <div class="mb-3">
-        <form action="index.php" method="POST" id="form-noticia" class="formulario bg-dark text-white p-4 rounded">
-          <input type="hidden" name="action" value="create_article">
-          <label for="title">Título:</label>
-          <input type="text" name="title" id="title">
-          
-          <label for="content">Contenido:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          
-          <button type="submit">Crear Artículo</button>
-        </form>
+      <div class= "container-fluid text-center">
+        <div class="mb-3">
+          <form action="index.php" method="POST" id="form-noticia" class="formulario bg-dark text-white p-4 rounded">
+            <input type="hidden" name="action" value="create_article">
+            <div class = "row">
+            <label for="title">Título:</label>
+            <input type="text" name="title" id="title">
+            </div>
+            <div class="row">
+            <label for="content">Contenido:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="row">
+            <button type="submit">Crear Artículo</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </main>
+      </main>
     <footer>
         <div class="container-fluid bg-dark text-white text-center py-3">
           <p>El Faro - Todos los derechos reservados © 2024</p>

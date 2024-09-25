@@ -50,6 +50,41 @@
         <p class="mb-0">Aviso importante: Actualización de noticias</p>
     </div>
     <main>
+      <div class="container-fluid text-center">
+          <div class="row">
+            <h2 class="new-amsterdam text-center fs-1">Registro</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <div class="mb-3">
+                <form action="/index.php" method="POST">
+                  <input type="hidden" name="action" value="register">
+                  <div class="row">
+                  <label for="username">Nombre de Usuario:</label>
+                  <input type="text" id="username" name="username" required>
+                  </div>
+                  <div class="row">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="row">
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" name="password" required>
+                  
+                  
+                  <!-- Selección del rol del usuario -->
+                  <label for="role">Rol del usuario:</label>
+                  <select id="role" name="role">
+                    <option value="lector">Lector</option>
+                    <option value="editor">Editor</option>
+                  </select>
+                  </div>
+                  <div class="row">
+                  <button type="submit">Registrarse</button>
+                  </div>
+                </form>
+              </div>
+      <!--
       <div class="mb-3">   
         <form action="/index.php" method="POST">
           <input type="hidden" name="action" value="register">
@@ -63,7 +98,7 @@
           <label for="password">Contraseña:</label>
           <input type="password" id="password" name="password" required>
           
-          <!-- Selección del rol del usuario -->
+         
           <label for="role">Rol del usuario:</label>
           <select id="role" name="role">
             <option value="lector">Lector</option>
@@ -71,8 +106,9 @@
           </select>
           
           <button type="submit">Registrarse</button>
+        
         </form>
-      </div>
+      </div>-->
       </main>
       <footer>
         <div class="container-fluid bg-dark text-white text-center py-3">

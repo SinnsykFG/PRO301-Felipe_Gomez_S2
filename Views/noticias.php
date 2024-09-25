@@ -3,7 +3,7 @@ session_start();
 
 // Redirigir al usuario si no está registrado
 if (!isset($_SESSION['usuario_id'])) {
-    header('Location: ../Index.php');
+    header('Location: ./Index.php');
     exit;
 }
 
